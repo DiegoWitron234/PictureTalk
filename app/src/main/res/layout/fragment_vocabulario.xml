@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_diccionario"
     tools:context=".Vocabulario">
 
     <LinearLayout
@@ -27,12 +26,12 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="fitXY"
-            android:src="@drawable/logo_koltaun"
+            android:src="@drawable/logopicturetalk"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koltaun"
+            android:text="@string/app_name"
             android:layout_gravity="center"
             android:textSize="30sp"
             android:textColor="@color/black"

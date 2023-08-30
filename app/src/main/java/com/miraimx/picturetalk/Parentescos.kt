@@ -26,11 +26,11 @@ class Parentescos : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        abuela = MediaPlayer.create(this, R.raw.abuela)
-        abuelo = MediaPlayer.create(this, R.raw.abuelo)
-        madre = MediaPlayer.create(this, R.raw.madre)
-        padre = MediaPlayer.create(this, R.raw.padre)
-        ahijado = MediaPlayer.create(this, R.raw.ahijado)
+        abuela = MediaPlayer.create(this, R.raw.tono)
+        abuelo = MediaPlayer.create(this, R.raw.tono)
+        madre = MediaPlayer.create(this, R.raw.tono)
+        padre = MediaPlayer.create(this, R.raw.tono)
+        ahijado = MediaPlayer.create(this, R.raw.tono)
 
         val imageButton1: ImageButton = findViewById(R.id.imgButton1)
         val imageButton2: ImageButton = findViewById(R.id.imgButton2)

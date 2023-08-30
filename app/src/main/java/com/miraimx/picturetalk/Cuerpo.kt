@@ -29,12 +29,12 @@ class Cuerpo : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        abdomen = MediaPlayer.create(this, R.raw.abdomen)
-        boca = MediaPlayer.create(this, R.raw.boca)
-        brazo = MediaPlayer.create(this, R.raw.brazo)
-        cuello = MediaPlayer.create(this, R.raw.cuello)
-        garganta = MediaPlayer.create(this, R.raw.garganta)
-        mano = MediaPlayer.create(this, R.raw.mano)
+        abdomen = MediaPlayer.create(this, R.raw.tono)
+        boca = MediaPlayer.create(this, R.raw.tono)
+        brazo = MediaPlayer.create(this, R.raw.tono)
+        cuello = MediaPlayer.create(this, R.raw.tono)
+        garganta = MediaPlayer.create(this, R.raw.tono)
+        mano = MediaPlayer.create(this, R.raw.tono)
 
         val imageButton1: ImageButton = findViewById(R.id.imgButton1)
         val imageButton2: ImageButton = findViewById(R.id.imgButton2)
