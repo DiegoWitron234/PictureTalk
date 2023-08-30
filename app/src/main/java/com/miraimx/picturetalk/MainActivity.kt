@@ -1,6 +1,5 @@
 package com.miraimx.picturetalk
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -54,18 +53,6 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        /*
-        // Agregar el callback para el botón "Atrás"
-        val onBackPressedCallback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                // Aquí puedes realizar tus acciones personalizadas antes de realizar el cierre de la actividad
-                // Por ejemplo, mostrar un diálogo de confirmación, guardar datos, etc.
-                mostrarDialogoConfirmacion()
-            }
-        }
-        onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
-         */
 
         // Agregar el callback para el botón "Back"
         val onBackPressedCallback = object : OnBackPressedCallback(true) {

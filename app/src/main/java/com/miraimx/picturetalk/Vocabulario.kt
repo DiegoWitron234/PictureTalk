@@ -90,7 +90,7 @@ class Vocabulario : Fragment() {
         listaDerecha.layoutManager = layoutManagerDerecha
 
         val adapterIzquierda = PalabraAdapter(obtenerPalabrasEspañol(palabras), requireContext())
-        val adapterDerecha = PalabraAdapter(obtenerPalabrasTzotzil(palabras), requireContext())
+        val adapterDerecha = PalabraAdapter(obtenerPalabrasIngles(palabras), requireContext())
 
         listaIzquierda.adapter = adapterIzquierda
         listaDerecha.adapter = adapterDerecha
@@ -100,7 +100,7 @@ class Vocabulario : Fragment() {
         return palabrasFiltradas.map { palabra -> palabra.split("|")[0] }
     }
 
-    private fun obtenerPalabrasTzotzil(palabrasFiltradas: List<String>): List<String> {
+    private fun obtenerPalabrasIngles(palabrasFiltradas: List<String>): List<String> {
         return palabrasFiltradas.map { palabra -> palabra.split("|")[1] }
     }
 
@@ -129,8 +129,8 @@ class Vocabulario : Fragment() {
 
         if (palabrasEncontradas.isNotEmpty()) {
             val resultadoBuilder = StringBuilder()
-            palabrasEncontradas.forEachIndexed { index, (espanol, tzotzil) ->
-                resultadoBuilder.append("Español: $espanol Tzotzil: $tzotzil")
+            palabrasEncontradas.forEachIndexed { index, (espanol, ingles) ->
+                resultadoBuilder.append("Español: $espanol Inglés: $ingles")
                 if (index < palabrasEncontradas.size - 1) {
                     resultadoBuilder.append("\n")
                 }
