@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_diccionario"
+    tools:context=".Alimentos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimentos"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <ImageButton
+            android:id="@+id/imgButton1"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de aguacate"
+            android:src="@drawable/aguacate"/>
+        <ImageButton
+            android:id="@+id/imgButton2"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de ajo"
+            android:src="@drawable/ajo"/>
+        <ImageButton
+            android:id="@+id/imgButton3"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de banana"
+            android:src="@drawable/banana"/>
+        <ImageButton
+            android:id="@+id/imgButton4"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de calabaza"
+            android:src="@drawable/calabaza"/>
+        <ImageButton
+            android:id="@+id/imgButton5"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de cebolla"
+            android:src="@drawable/cebolla"/>
+        <ImageButton
+            android:id="@+id/imgButton6"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de champiñón"
+            android:src="@drawable/champinon"/>
+        <ImageButton
+            android:id="@+id/imgButton7"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de chayote"
+            android:src="@drawable/chayote"/>
+        <ImageButton
+            android:id="@+id/imgButton8"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de chicozapote"
+            android:src="@drawable/chicozapote"/>
+        <ImageButton
+            android:id="@+id/imgButton9"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de chile"
+            android:src="@drawable/chile"/>
+        <ImageButton
+            android:id="@+id/imgButton10"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de chirimoya"
+            android:src="@drawable/chirimoya"/>
+        <ImageButton
+            android:id="@+id/imgButton11"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de durazno"
+            android:src="@drawable/durazno"/>
+        <ImageButton
+            android:id="@+id/imgButton12"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de frijol"
+            android:src="@drawable/frijol"/>
+        <ImageButton
+            android:id="@+id/imgButton13"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de guayaba"
+            android:src="@drawable/guayaba"/>
+        <ImageButton
+            android:id="@+id/imgButton14"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de guineo"
+            android:src="@drawable/guineo"/>
+        <ImageButton
+            android:id="@+id/imgButton15"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de hierva santa"
+            android:src="@drawable/hiervasanta"/>
+        <ImageButton
+            android:id="@+id/imgButton16"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de lechuga"
+            android:src="@drawable/lechuga"/>
+        <ImageButton
+            android:id="@+id/imgButton17"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de limón"
+            android:src="@drawable/limon"/>
+        <ImageButton
+            android:id="@+id/imgButton18"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de elote"
+            android:src="@drawable/maiz"/>
+        <ImageButton
+            android:id="@+id/imgButton19"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de mandarina"
+            android:src="@drawable/mandarina"/>
+        <ImageButton
+            android:id="@+id/imgButton20"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de manzana"
+            android:src="@drawable/manzana"/>
+        <ImageButton
+            android:id="@+id/imgButton21"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de milpa"
+            android:src="@drawable/milpa"/>
+        <ImageButton
+            android:id="@+id/imgButton22"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de mora"
+            android:src="@drawable/mora"/>
+        <ImageButton
+            android:id="@+id/imgButton23"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de nopal"
+            android:src="@drawable/nopal"/>
+        <ImageButton
+            android:id="@+id/imgButton24"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de papa"
+            android:src="@drawable/papa"/>
+        <ImageButton
+            android:id="@+id/imgButton25"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de papaya"
+            android:src="@drawable/papaya"/>
+        <ImageButton
+            android:id="@+id/imgButton26"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de piña"
+            android:src="@drawable/pinia"/>
+        <ImageButton
+            android:id="@+id/imgButton27"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de tomate"
+            android:src="@drawable/tomate"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Otros atributos si los necesitas -->
+
+        <!-- Color del texto introducido -->
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <!-- styles.xml -->
+    <style name="SeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_background</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+    </style>
+
+    <style name="boton_verde">
+        <item name="backgroundTint">@color/verde</item>
+        <item name="android:background">@drawable/redondeado_verde</item>
+    </style>
+
+    <style name="titulos_aprender">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="descripciones_aprender">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+</resources>

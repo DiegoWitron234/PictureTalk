@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_diccionario"
+    tools:context=".Colores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colores"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <ImageButton
+            android:id="@+id/imgButton1"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de amarillo"
+            android:src="@drawable/amarillo"/>
+        <ImageButton
+            android:id="@+id/imgButton2"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de azul"
+            android:src="@drawable/azul"/>
+        <ImageButton
+            android:id="@+id/imgButton3"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de blanco"
+            android:src="@drawable/blanco"/>
+        <ImageButton
+            android:id="@+id/imgButton4"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de café"
+            android:src="@drawable/cafe"/>
+        <ImageButton
+            android:id="@+id/imgButton5"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de celeste"
+            android:src="@drawable/celeste"/>
+        <ImageButton
+            android:id="@+id/imgButton6"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de gris"
+            android:src="@drawable/gris"/>
+        <ImageButton
+            android:id="@+id/imgButton7"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de guinda"
+            android:src="@drawable/guinda"/>
+        <ImageButton
+            android:id="@+id/imgButton8"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de lila"
+            android:src="@drawable/lila"/>
+        <ImageButton
+            android:id="@+id/imgButton9"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de morado"
+            android:src="@drawable/morado"/>
+        <ImageButton
+            android:id="@+id/imgButton10"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de anaranjado"
+            android:src="@drawable/naranja"/>
+        <ImageButton
+            android:id="@+id/imgButton11"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de negro"
+            android:src="@drawable/negro"/>
+        <ImageButton
+            android:id="@+id/imgButton12"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de rojo"
+            android:src="@drawable/rojo"/>
+        <ImageButton
+            android:id="@+id/imgButton13"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de rosado"
+            android:src="@drawable/rosa"/>
+        <ImageButton
+            android:id="@+id/imgButton14"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón de verde"
+            android:src="@drawable/verde"/>
+    </LinearLayout>
+
+</ScrollView>

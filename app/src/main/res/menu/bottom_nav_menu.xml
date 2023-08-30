@@ -2,18 +2,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:id="@+id/navigation_vocabulario"
+        android:icon="@drawable/ic_vocabulario"
+        android:title="@string/title_vocabulario" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_cuentos"
+        android:icon="@drawable/ic_cuentos"
+        android:title="@string/title_cuentos" />
 
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_aprender"
+        android:icon="@drawable/ic_aprender"
+        android:title="@string/tltle_aprender" />
+
+    <!--
+    <item
+        android:id="@+id/navigarion_practicar"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/title_practicar"/>
+
+    <item
+        android:id="@+id/navigation_informacion"
+        android:icon="@drawable/ic_informacion"
+        android:title="@string/title_informacion"
+        />
+        -->
 
 </menu>

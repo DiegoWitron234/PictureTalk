@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_diccionario"
+    tools:context=".Numeros">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Números"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <ImageButton
+            android:id="@+id/imgButton1"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número uno"
+            android:src="@drawable/uno"/>
+        <ImageButton
+            android:id="@+id/imgButton2"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número dos"
+            android:src="@drawable/dos"/>
+        <ImageButton
+            android:id="@+id/imgButton3"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número tres"
+            android:src="@drawable/tres"/>
+        <ImageButton
+            android:id="@+id/imgButton4"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número cuatro"
+            android:src="@drawable/cuatro"/>
+        <ImageButton
+            android:id="@+id/imgButton5"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número cinco"
+            android:src="@drawable/cinco"/>
+        <ImageButton
+            android:id="@+id/imgButton6"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número seis"
+            android:src="@drawable/seis"/>
+        <ImageButton
+            android:id="@+id/imgButton7"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número siete"
+            android:src="@drawable/siete"/>
+        <ImageButton
+            android:id="@+id/imgButton8"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número ocho"
+            android:src="@drawable/ocho"/>
+        <ImageButton
+            android:id="@+id/imgButton9"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número nueve"
+            android:src="@drawable/nueve"/>
+        <ImageButton
+            android:id="@+id/imgButton10"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:background="@drawable/redondeado_completo"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Botón número diez"
+            android:src="@drawable/diez"/>
+    </LinearLayout>
+
+</ScrollView>

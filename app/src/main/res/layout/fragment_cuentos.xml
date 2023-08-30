@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_diccionario"
+    tools:context=".Cuentos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuentos"
+                android:textSize="30dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                />
+            <ImageButton
+                android:id="@+id/imgButton1"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:background="@drawable/redondeado_completo"
+                android:scaleType="centerInside"
+                android:contentDescription="Botón de un tigre y un cachorro"
+                android:src="@drawable/dibujotigrecachorro"/>
+            <ImageButton
+                android:id="@+id/imgButton2"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_width="300dp"
+                android:background="@drawable/redondeado_completo"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Botón de conejo"
+                android:src="@drawable/dibujoconejo"/>
+            <ImageButton
+                android:id="@+id/imgButton3"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_width="300dp"
+                android:background="@drawable/redondeado_completo"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Botón de espantagentes"
+                android:src="@drawable/dibujoespantagentes"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

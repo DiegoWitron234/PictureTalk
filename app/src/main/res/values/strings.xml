@@ -1,6 +1,125 @@
 <resources>
-    <string name="app_name">PictureTalk</string>
+    <string name="app_name">Koltaun</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_vocabulario">Vocabulario</string>
+    <string name="title_cuentos">Cuentos</string>
+    <string name="tltle_aprender">Aprender</string>
+    <string name="title_practicar">Practicar</string>
+    <string name="title_informacion">Información</string>
+
+    <string name="descripcion_colores">Colores en español e inglés</string>
+    <string name="descripcion_alimentos">Frutas y verduras en español e inglés.</string>
+    <string name="descripcion_animales">Especies de animales en español e inglés.</string>
+    <string name="descripcion_cuertpo">Partes del cuerpo en español e inglés.</string>
+    <string name="descripcion_parentezco">Familiares en español e inglés.</string>
+    <string name="descripcion_tiempo">Tiempo en español e inglés.</string>
+    <string name="descripcion_numeros">Números en español e inglés.</string>
+    <string name="descripcion_verbos">Verbos en español e inglés.</string>
+    <string name="descripcion_saludos">Saludos y frases en español e inglés.</string>
+
+    <string name="lblColaboradores">Colaboradores</string>
+    <string name="lblCreadores">Creadores</string>
+    <string name="lblFacebookTourGame">/MiraiMX</string>
+    <string name="lblAvisoPrivacidad">Aviso de privacidad</string>
+    <string name="lblDerechosReservados">PictureTalk\n©2023 MiraiMX. Todos los derechos reservados</string>
+    <string name="correoMirai">miraimx742414@gmail.com</string>
+    <string name="version">Versión 1.0.0</string>
+    <string name="titleAcercaDe">Acerca De</string>
+    <string name="nombrescolaboradores">MiraiMX\nEtc</string>
+    <string name="descripcionLogoTourGame">Logo de la empresa MiraiMX</string>
+    <string name="nombreKevin">Kevin Barrios</string>
+    <string name="nombreMiriam">Miriam Montalvo</string>
+    <string name="nombreDiego">Diego Witrón</string>
+    <string name="nombreRaul">Raúl Rodríguez</string>
+    <string name="lblAsesores">Asesores</string>
+    <string name="nombreMadain">Madain Pérez</string>
+    <string name="nombreNestor">Néstor Morales</string>
+    <string name="nombreRuth">Ruth Roblero</string>
+    <string name="lblVoz">Voz en tzotzil</string>
+    <string name="lblDisenador">Diseñador</string>
+    <string name="nombreAndrea">Andrea Díaz</string>
+    <string name="nombreAlan">Alan Witrón</string>
+    <string name="lblRegistrarNuevoUsuario">Registrar nuevo usuario</string>
+    <string name="lblCorreo">Correo electrónico:</string>
+    <string name="lblNuevaContra">Nueva contraseña:</string>
+    <string name="lblConfirmaContra">Confirma tu contraseña:</string>
+    <string name="lblRegistrarse">Registrarse</string>
+    <string name="hintContrasena">Contraseña</string>
+    <string name="hintCorreo">Correo</string>
+    <string name="lblIniciarSesion">Iniciar sesión</string>
+    <string name="lblRegistrate">¿No tienes cuenta? Regístrate</string>
+    <string name="confirmacionTerminos">Confirmo que he leído y estoy de acuerdo con los términos y condiciones y la política de privacidad</string>
+
+    <string-array name="lista_palabras">
+        <item>hola|hello</item>
+        <item>casa|house</item>
+        <item>perro|dog</item>
+        <item>gato|cat</item>
+        <item>amarillo|yellow</item>
+        <item>manzana|apple</item>
+        <item>montaña|mountain</item>
+        <item>sol|sun</item>
+        <item>luna|moon</item>
+        <item>estrella|star</item>
+        <item>fuego|fire</item>
+        <item>agua|water</item>
+        <item>aire|air</item>
+        <item>tierra|earth</item>
+        <item>árbol|tree</item>
+        <item>flor|flower</item>
+        <item>río|river</item>
+        <item>mar|sea</item>
+        <item>viento|wind</item>
+        <item>nube|cloud</item>
+        <item>rayo|lightning</item>
+        <item>trueno|thunder</item>
+        <item>nieve|snow</item>
+        <item>lluvia|rain</item>
+        <item>frio|cold</item>
+        <item>calor|heat</item>
+        <item>alegre|happy</item>
+        <item>triste|sad</item>
+        <item>enojado|angry</item>
+        <item>miedo|fear</item>
+        <item>amor|love</item>
+        <item>odio|hate</item>
+        <item>comer|eat</item>
+        <item>beber|drink</item>
+        <item>dormir|sleep</item>
+        <item>caminar|walk</item>
+        <item>correr|run</item>
+        <item>saltar|jump</item>
+        <item>reír|laugh</item>
+        <item>llorar|cry</item>
+        <item>hablar|speak</item>
+        <item>escuchar|listen</item>
+        <item>ver|see</item>
+        <item>sentir|feel</item>
+        <item>pensar|think</item>
+        <item>soñar|dream</item>
+        <item>aprender|learn</item>
+        <item>conocer|know</item>
+        <item>querer|want</item>
+        <item>crear|create</item>
+        <item>buscar|search</item>
+        <item>encontrar|find</item>
+        <item>dar|give</item>
+        <item>recibir|receive</item>
+        <item>trabajar|work</item>
+        <item>descansar|rest</item>
+        <item>ganar|win</item>
+        <item>perder|lose</item>
+        <item>abrir|open</item>
+        <item>cerrar|close</item>
+        <item>entrar|enter</item>
+        <item>salir|exit</item>
+        <!-- Agregar más palabras aquí -->
+    </string-array>
+
 </resources>

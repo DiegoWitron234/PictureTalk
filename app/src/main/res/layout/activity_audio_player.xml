@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AudioPlayerActivity">
+
+    <ImageView
+        android:id="@+id/imgCuento"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/redondeado_completo"
+        android:scaleType="centerInside"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/brazo"
+        android:layout_marginBottom="50dp"
+        />
+    <Button
+        android:id="@+id/btnPlayPause"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/boton_verde"
+        android:text="Reproducir" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/SeekBarStyle"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
