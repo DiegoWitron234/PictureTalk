@@ -26,8 +26,8 @@ class Cuentos : Fragment() {
         val imageButton3: ImageButton = view.findViewById(R.id.imgButton3)
 
         imageButton1.setOnClickListener {
-            val idImagen = R.drawable.dibujotigrecachorro
-            val idCancion = R.raw.azul
+            val idImagen = R.drawable.pinocho
+            val idCancion = R.raw.pinocho
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)
@@ -35,8 +35,8 @@ class Cuentos : Fragment() {
         }
 
         imageButton2.setOnClickListener {
-            val idImagen = R.drawable.dibujoconejo
-            val idCancion = R.raw.amarillo
+            val idImagen = R.drawable.princesa
+            val idCancion = R.raw.princesa
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)
@@ -44,8 +44,8 @@ class Cuentos : Fragment() {
         }
 
         imageButton3.setOnClickListener {
-            val idImagen = R.drawable.dibujoespantagentes
-            val idCancion = R.raw.verde
+            val idImagen = R.drawable.tortuga
+            val idCancion = R.raw.liebre
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)

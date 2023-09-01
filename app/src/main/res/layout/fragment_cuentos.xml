@@ -23,36 +23,67 @@
                 android:gravity="center"
                 android:layout_margin="25dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pinocchio"
+                android:textSize="30dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
             <ImageButton
                 android:id="@+id/imgButton1"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
                 android:background="@drawable/redondeado_completo"
                 android:scaleType="centerInside"
                 android:contentDescription="Botón de un tigre y un cachorro"
-                android:src="@drawable/dibujotigrecachorro"/>
+                android:src="@drawable/pinocho"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Princess and the pea"
+                android:textSize="30dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
             <ImageButton
                 android:id="@+id/imgButton2"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_width="300dp"
                 android:background="@drawable/redondeado_completo"
                 android:layout_height="250dp"
                 android:scaleType="centerInside"
                 android:contentDescription="Botón de conejo"
-                android:src="@drawable/dibujoconejo"/>
+                android:src="@drawable/princesa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hare and turtle"
+                android:textSize="30dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
             <ImageButton
                 android:id="@+id/imgButton3"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_width="300dp"
                 android:background="@drawable/redondeado_completo"
                 android:layout_height="250dp"
                 android:scaleType="centerInside"
                 android:contentDescription="Botón de espantagentes"
-                android:src="@drawable/dibujoespantagentes"/>
+                android:src="@drawable/tortuga"/>
         </LinearLayout>
     </ScrollView>
 
