@@ -43,7 +43,7 @@ class Aprender : Fragment() {
         //btnSaludos = view.findViewById(R.id.btnSaludos)
 
         btnColores.setOnClickListener {
-            val intent = Intent(requireContext(), Colores::class.java)
+            val intent = Intent(requireContext(), ListaColores::class.java)
             startActivity(intent)
         }
         btnAlimentos.setOnClickListener {

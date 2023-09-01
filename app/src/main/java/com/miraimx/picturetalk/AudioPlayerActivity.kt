@@ -50,7 +50,7 @@ class AudioPlayerActivity : AppCompatActivity() {
 
         val btnPlayPause = findViewById<Button>(R.id.btnPlayPause)
 
-        btnPlayPause.setBackgroundColor(getResources().getColor(R.color.verde))
+        btnPlayPause.setBackgroundColor(resources.getColor(R.color.verde))
 
         btnPlayPause.setOnClickListener {
             if (isPlaying) {
