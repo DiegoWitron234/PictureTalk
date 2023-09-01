@@ -1,7 +1,6 @@
 package com.miraimx.picturetalk
 
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,7 +27,7 @@ class Cuentos : Fragment() {
 
         imageButton1.setOnClickListener {
             val idImagen = R.drawable.dibujotigrecachorro
-            val idCancion = R.raw.tono
+            val idCancion = R.raw.azul
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)
@@ -37,7 +36,7 @@ class Cuentos : Fragment() {
 
         imageButton2.setOnClickListener {
             val idImagen = R.drawable.dibujoconejo
-            val idCancion = R.raw.tono2
+            val idCancion = R.raw.amarillo
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)
@@ -46,7 +45,7 @@ class Cuentos : Fragment() {
 
         imageButton3.setOnClickListener {
             val idImagen = R.drawable.dibujoespantagentes
-            val idCancion = R.raw.tono3
+            val idCancion = R.raw.verde
             val intent = Intent(context, AudioPlayerActivity::class.java)
             intent.putExtra("audioResourceId", idCancion)
             intent.putExtra("imageResourceId", idImagen)

@@ -25,9 +25,9 @@ class Verbos : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        tono1 = MediaPlayer.create(this, R.raw.tono)
-        tono2 = MediaPlayer.create(this, R.raw.tono2)
-        tono3 = MediaPlayer.create(this, R.raw.tono3)
+        tono1 = MediaPlayer.create(this, R.raw.azul)
+        tono2 = MediaPlayer.create(this, R.raw.amarillo)
+        tono3 = MediaPlayer.create(this, R.raw.verde)
 
         val imageButton1: ImageButton = findViewById(R.id.imgButton1)
         val imageButton2: ImageButton = findViewById(R.id.imgButton2)

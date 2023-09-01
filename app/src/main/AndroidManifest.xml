@@ -13,6 +13,21 @@
         android:theme="@style/Theme.PictureTalk"
         tools:targetApi="31">
         <activity
+            android:name=".ListaFamilia"
+            android:exported="false" />
+        <activity
+            android:name=".ListaCuerpo"
+            android:exported="false" />
+        <activity
+            android:name=".ListaNumeros"
+            android:exported="false" />
+        <activity
+            android:name=".ListaAnimales"
+            android:exported="false" />
+        <activity
+            android:name=".ListaAlimentos"
+            android:exported="false" />
+        <activity
             android:name=".ListaColores"
             android:exported="false" />
         <activity
@@ -26,38 +41,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Verbos"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Tiempo"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Saludos"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Parentescos"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Numeros"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Cuerpo"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Colores"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Animales"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Alimentos"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

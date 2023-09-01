@@ -56,6 +56,96 @@
     <string name="lblRegistrate">¿No tienes cuenta? Regístrate</string>
     <string name="confirmacionTerminos">Confirmo que he leído y estoy de acuerdo con los términos y condiciones y la política de privacidad</string>
 
+    <string-array name="coloresLista">
+        <item>amarillo</item>
+        <item>azul</item>
+        <item>blanco</item>
+        <item>cafe</item>
+        <item>celeste</item>
+        <item>gris</item>
+        <item>guinda</item>
+        <item>lila</item>
+        <item>morado</item>
+        <item>naranja</item>
+        <item>negro</item>
+        <item>rojo</item>
+        <item>rosa</item>
+        <item>verde</item>
+    </string-array>
+
+    <string-array name="alimentosLista">
+        <item>aguacate</item>
+        <item>ajo</item>
+        <item>banana</item>
+        <item>calabaza</item>
+        <item>cebolla</item>
+        <item>champinon</item>
+        <item>chayote</item>
+        <item>chicozapote</item>
+        <item>chile</item>
+        <item>chirimoya</item>
+        <item>durazno</item>
+        <item>frijol</item>
+        <item>guayaba</item>
+        <item>guineo</item>
+        <item>hiervasanta</item>
+        <item>lechuga</item>
+        <item>limon</item>
+        <item>maiz</item>
+        <item>mandarina</item>
+        <item>manzana</item>
+        <item>milpa</item>
+        <item>mora</item>
+        <item>nopal</item>
+        <item>papa</item>
+        <item>papaya</item>
+        <item>pinia</item>
+        <item>tomate</item>
+    </string-array>
+
+    <string-array name="animalesLista">
+        <item>abeja</item>
+        <item>acaro</item>
+        <item>alacran</item>
+        <item>arana</item>
+        <item>ardilla</item>
+        <item>armadillo</item>
+        <item>caballo</item>
+        <item>mariposa</item>
+        <item>mosca</item>
+        <item>perro</item>
+    </string-array>
+
+    <string-array name="numeroLista">
+        <item>uno</item>
+        <item>dos</item>
+        <item>tres</item>
+        <item>cuatro</item>
+        <item>cinco</item>
+        <item>seis</item>
+        <item>siete</item>
+        <item>ocho</item>
+        <item>nueve</item>
+        <item>diez</item>
+    </string-array>
+
+    <string-array name="cuerpoLista">
+        <item>abdomen</item>
+        <item>boca</item>
+        <item>brazo</item>
+        <item>cuello</item>
+        <item>garganta</item>
+        <item>mano</item>
+    </string-array>
+
+    <string-array name="familiaLista">
+        <item>abuela</item>
+        <item>abuelo</item>
+        <item>madre</item>
+        <item>padre</item>
+        <item>ahijado</item>
+    </string-array>
+
     <string-array name="lista_palabras">
         <item>hola|hello</item>
         <item>casa|house</item>

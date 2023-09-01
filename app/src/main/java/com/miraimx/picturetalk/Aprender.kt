@@ -47,23 +47,23 @@ class Aprender : Fragment() {
             startActivity(intent)
         }
         btnAlimentos.setOnClickListener {
-            val intent = Intent(requireContext(), Alimentos::class.java)
+            val intent = Intent(requireContext(), ListaAlimentos::class.java)
             startActivity(intent)
         }
         btnAnimales.setOnClickListener {
-            val intent = Intent(requireContext(), Animales::class.java)
+            val intent = Intent(requireContext(), ListaAnimales::class.java)
             startActivity(intent)
         }
         btnNumeros.setOnClickListener {
-            val intent = Intent(requireContext(), Numeros::class.java)
+            val intent = Intent(requireContext(), ListaNumeros::class.java)
             startActivity(intent)
         }
         btnCuerpo.setOnClickListener {
-            val intent = Intent(requireContext(), Cuerpo::class.java)
+            val intent = Intent(requireContext(), ListaCuerpo::class.java)
             startActivity(intent)
         }
         btnParentezcos.setOnClickListener {
-            val intent = Intent(requireContext(), Parentescos::class.java)
+            val intent = Intent(requireContext(), ListaFamilia::class.java)
             startActivity(intent)
         }
         /*

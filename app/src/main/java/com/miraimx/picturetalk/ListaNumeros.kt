@@ -11,15 +11,14 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
+class ListaNumeros : AppCompatActivity() {
 
-class ListaColores : AppCompatActivity() {
-
-    private val sonidos = mutableListOf<MediaPlayer>()
     private lateinit var mAdView : AdView
+    private val sonidos = mutableListOf<MediaPlayer>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_colores)
+        setContentView(R.layout.activity_lista_numeros)
 
         MobileAds.initialize(this) {}
         mAdView = findViewById(R.id.adView)
@@ -29,9 +28,10 @@ class ListaColores : AppCompatActivity() {
         initRecyclerView()
     }
 
+
     private fun initRecyclerView() {
         val coloresLista = mutableListOf<ListaRecursos>()
-        val stringColor = resources.getStringArray(R.array.coloresLista).toList()
+        val stringColor = resources.getStringArray(R.array.numeroLista).toList()
 
         for (color in stringColor){
             coloresLista.add(ListaRecursos(color))
@@ -39,7 +39,7 @@ class ListaColores : AppCompatActivity() {
 
         val manager = LinearLayoutManager(this)
         val decoracion = DividerItemDecoration(this, manager.orientation)
-        val recyclerView = findViewById<RecyclerView>(R.id.rvColores)
+        val recyclerView = findViewById<RecyclerView>(R.id.rvNumeros)
         recyclerView.layoutManager = manager
         recyclerView.adapter = RecursosAdapter(coloresLista) { reproducirTono(it) }
         recyclerView.addItemDecoration(decoracion)
@@ -59,18 +59,16 @@ class ListaColores : AppCompatActivity() {
         } catch (_: Resources.NotFoundException) {}
     }
 
-    override fun onResume() {
-        super.onResume()
-        mAdView.resume()
-    }
-
     override fun onPause() {
         super.onPause()
         mAdView.pause()
     }
+    override fun onResume() {
+        super.onResume()
+        mAdView.resume()
+    }
     override fun onDestroy() {
         super.onDestroy()
-        mAdView.destroy()
         for (tono in sonidos) {
             tono.release()
         }

@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         MobileAds.initialize(this) {}
-
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)

@@ -11,15 +11,14 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
-
-class ListaColores : AppCompatActivity() {
+class ListaAnimales : AppCompatActivity() {
 
     private val sonidos = mutableListOf<MediaPlayer>()
     private lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_colores)
+        setContentView(R.layout.activity_lista_animales)
 
         MobileAds.initialize(this) {}
         mAdView = findViewById(R.id.adView)
@@ -28,28 +27,28 @@ class ListaColores : AppCompatActivity() {
 
         initRecyclerView()
     }
-
     private fun initRecyclerView() {
-        val coloresLista = mutableListOf<ListaRecursos>()
-        val stringColor = resources.getStringArray(R.array.coloresLista).toList()
+        val recursoLista = mutableListOf<ListaRecursos>()
 
-        for (color in stringColor){
-            coloresLista.add(ListaRecursos(color))
+        val stringRecurso = resources.getStringArray(R.array.animalesLista).toList()
+
+        for (color in stringRecurso){
+            recursoLista.add(ListaRecursos(color))
         }
 
         val manager = LinearLayoutManager(this)
         val decoracion = DividerItemDecoration(this, manager.orientation)
-        val recyclerView = findViewById<RecyclerView>(R.id.rvColores)
+        val recyclerView = findViewById<RecyclerView>(R.id.rvAnimales)
         recyclerView.layoutManager = manager
-        recyclerView.adapter = RecursosAdapter(coloresLista) { reproducirTono(it) }
+        recyclerView.adapter = RecursosAdapter(recursoLista) { reproducirTono(it) }
         recyclerView.addItemDecoration(decoracion)
     }
 
-    private fun reproducirTono(colores: ListaRecursos) {
-        val nombreColor = colores.nombreElemento
-        val idColor = resources.getIdentifier(nombreColor, "raw", packageName)
+    private fun reproducirTono(recurso: ListaRecursos) {
+        val nombreRecursos = recurso.nombreElemento
+        val idRecurso = resources.getIdentifier(nombreRecursos, "raw", packageName)
         try {
-            val tono = MediaPlayer.create(this, idColor)
+            val tono = MediaPlayer.create(this, idRecurso)
             sonidos.add(tono)
             if (tono.isPlaying) {
                 tono.seekTo(0)
@@ -63,7 +62,6 @@ class ListaColores : AppCompatActivity() {
         super.onResume()
         mAdView.resume()
     }
-
     override fun onPause() {
         super.onPause()
         mAdView.pause()
