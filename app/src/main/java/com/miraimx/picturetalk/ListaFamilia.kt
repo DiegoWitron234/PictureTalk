@@ -1,5 +1,6 @@
 package com.miraimx.picturetalk
 
+import android.annotation.SuppressLint
 import android.content.res.Resources
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class ListaFamilia : AppCompatActivity() {
 
     private val sonidos = mutableListOf<MediaPlayer>()
     private lateinit var mAdView : AdView
+    private var tono: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_familia)
@@ -27,33 +29,38 @@ class ListaFamilia : AppCompatActivity() {
         initRecyclerView()
     }
 
-
     private fun initRecyclerView() {
-        val coloresLista = mutableListOf<ListaRecursos>()
-        val stringColor = resources.getStringArray(R.array.familiaLista).toList()
-
-        for (color in stringColor){
-            coloresLista.add(ListaRecursos(color))
-        }
-
+        val recursosLista = mutableListOf<ListaRecursos>()
+        val etiquetasRecursos = resources.getStringArray(R.array.familiaLista).toList()
         val manager = LinearLayoutManager(this)
         val decoracion = DividerItemDecoration(this, manager.orientation)
         val recyclerView = findViewById<RecyclerView>(R.id.rvFamilia)
+
+        for (etiqueta in etiquetasRecursos){
+            recursosLista.add(ListaRecursos(etiqueta))
+        }
+
         recyclerView.layoutManager = manager
-        recyclerView.adapter = RecursosAdapter(coloresLista) { reproducirTono(it) }
+        recyclerView.adapter = RecursosAdapter(recursosLista) { reproducirTono(it) }
         recyclerView.addItemDecoration(decoracion)
     }
 
-    private fun reproducirTono(colores: ListaRecursos) {
-        val nombreColor = colores.nombreElemento
-        val idColor = resources.getIdentifier(nombreColor, "raw", packageName)
+    @SuppressLint("DiscouragedApi")
+    private fun reproducirTono(recurso: ListaRecursos) {
+        val nombreRecursos = recurso.nombreElemento
+        val idRecurso = resources.getIdentifier(nombreRecursos, "raw", packageName)
         try {
-            val tono = MediaPlayer.create(this, idColor)
-            sonidos.add(tono)
-            if (tono.isPlaying) {
-                tono.seekTo(0)
+            if (tono != null) {
+                if (tono!!.isPlaying) {
+                    tono!!.seekTo(0)
+                } else {
+                    tono!!.start()
+                }
             } else {
-                tono.start()
+                // Crear una nueva instancia si tono es nulo
+                tono = MediaPlayer.create(this, idRecurso)
+                sonidos.add(tono!!)
+                tono!!.start()
             }
         } catch (_: Resources.NotFoundException) {}
     }

@@ -1,5 +1,6 @@
 package com.miraimx.picturetalk
 
+import android.annotation.SuppressLint
 import android.content.res.Resources
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class ListaAnimales : AppCompatActivity() {
 
     private val sonidos = mutableListOf<MediaPlayer>()
     private lateinit var mAdView : AdView
+    private var tono: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,32 +30,37 @@ class ListaAnimales : AppCompatActivity() {
         initRecyclerView()
     }
     private fun initRecyclerView() {
-        val recursoLista = mutableListOf<ListaRecursos>()
-
-        val stringRecurso = resources.getStringArray(R.array.animalesLista).toList()
-
-        for (color in stringRecurso){
-            recursoLista.add(ListaRecursos(color))
-        }
-
+        val recursosLista = mutableListOf<ListaRecursos>()
+        val etiquetasRecursos = resources.getStringArray(R.array.animalesLista).toList()
         val manager = LinearLayoutManager(this)
         val decoracion = DividerItemDecoration(this, manager.orientation)
         val recyclerView = findViewById<RecyclerView>(R.id.rvAnimales)
+
+        for (etiqueta in etiquetasRecursos){
+            recursosLista.add(ListaRecursos(etiqueta))
+        }
+
         recyclerView.layoutManager = manager
-        recyclerView.adapter = RecursosAdapter(recursoLista) { reproducirTono(it) }
+        recyclerView.adapter = RecursosAdapter(recursosLista) { reproducirTono(it) }
         recyclerView.addItemDecoration(decoracion)
     }
 
+    @SuppressLint("DiscouragedApi")
     private fun reproducirTono(recurso: ListaRecursos) {
         val nombreRecursos = recurso.nombreElemento
         val idRecurso = resources.getIdentifier(nombreRecursos, "raw", packageName)
         try {
-            val tono = MediaPlayer.create(this, idRecurso)
-            sonidos.add(tono)
-            if (tono.isPlaying) {
-                tono.seekTo(0)
+            if (tono != null) {
+                if (tono!!.isPlaying) {
+                    tono!!.seekTo(0)
+                } else {
+                    tono!!.start()
+                }
             } else {
-                tono.start()
+                // Crear una nueva instancia si tono es nulo
+                tono = MediaPlayer.create(this, idRecurso)
+                sonidos.add(tono!!)
+                tono!!.start()
             }
         } catch (_: Resources.NotFoundException) {}
     }
