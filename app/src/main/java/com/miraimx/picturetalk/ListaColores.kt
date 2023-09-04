@@ -15,7 +15,7 @@ import com.google.android.gms.ads.MobileAds
 class ListaColores : AppCompatActivity() {
 
     private val sonidos = mutableListOf<MediaPlayer>()
-    private lateinit var mAdView : AdView
+    private lateinit var mAdView: AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,16 +30,16 @@ class ListaColores : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        val coloresLista = mutableListOf<ListaRecursos>()
-        val stringColor = resources.getStringArray(R.array.coloresLista).toList()
-
-        for (color in stringColor){
-            coloresLista.add(ListaRecursos(color))
-        }
-
         val manager = LinearLayoutManager(this)
         val decoracion = DividerItemDecoration(this, manager.orientation)
         val recyclerView = findViewById<RecyclerView>(R.id.rvColores)
+        val coloresLista = mutableListOf<ListaRecursos>()
+        val stringColor = resources.getStringArray(R.array.coloresLista).toList()
+
+        for (color in stringColor) {
+            coloresLista.add(ListaRecursos(color))
+        }
+
         recyclerView.layoutManager = manager
         recyclerView.adapter = RecursosAdapter(coloresLista) { reproducirTono(it) }
         recyclerView.addItemDecoration(decoracion)
@@ -56,7 +56,8 @@ class ListaColores : AppCompatActivity() {
             } else {
                 tono.start()
             }
-        } catch (_: Resources.NotFoundException) {}
+        } catch (_: Resources.NotFoundException) {
+        }
     }
 
     override fun onResume() {
@@ -68,6 +69,7 @@ class ListaColores : AppCompatActivity() {
         super.onPause()
         mAdView.pause()
     }
+
     override fun onDestroy() {
         super.onDestroy()
         mAdView.destroy()

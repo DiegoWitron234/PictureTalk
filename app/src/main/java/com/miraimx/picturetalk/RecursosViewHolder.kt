@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class RecursosViewHolder(view: View): RecyclerView.ViewHolder(view) {
-    val imagenColor = view.findViewById<ImageButton>(R.id.imgRecurso)
+    val imagenRecurso = view.findViewById<ImageButton>(R.id.imgRecurso)
 
     fun render(
         atributo: ListaRecursos, onClickListener:
@@ -14,10 +14,8 @@ class RecursosViewHolder(view: View): RecyclerView.ViewHolder(view) {
     ){
         val nombreRecurso = atributo.nombreElemento
         val idColor = itemView.resources.getIdentifier(nombreRecurso, "mipmap", itemView.context.packageName)
-        imagenColor.setBackgroundResource(idColor)
+        imagenRecurso.setBackgroundResource(idColor)
         // Listener que asigna el sonido
-        imagenColor.setOnClickListener { onClickListener(atributo)}
+        imagenRecurso.setOnClickListener { onClickListener(atributo)}
     }
-
-
 }

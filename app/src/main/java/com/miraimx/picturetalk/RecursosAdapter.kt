@@ -9,6 +9,7 @@ class RecursosAdapter(
     private val onClickListener:
         (ListaRecursos) -> Unit
 ) : RecyclerView.Adapter<RecursosViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecursosViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return RecursosViewHolder(layoutInflater.inflate(R.layout.item_recycler, parent, false))
@@ -20,5 +21,4 @@ class RecursosAdapter(
         val item = recursosLista[position]
         holder.render(item, onClickListener)
     }
-
 }
